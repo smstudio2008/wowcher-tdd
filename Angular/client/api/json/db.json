@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "name": "bob",
+      "age": 35,
+      "email": "bob@gmail.com"
+    },
+    {
+      "userId": 2,
+      "name": "sam",
+      "age": 22,
+      "email": "sam@gmail.com"
+    },
+    {
+      "userId": 3,
+      "name": "sue",
+      "age": 62,
+      "email": "sue@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "productId": 111,
+      "productName": "toothbrush"
+    },
+    {
+      "productId": 222,
+      "productName": "hammer"
+    },
+    {
+      "productId": 333,
+      "productName": "spoon"
+    },
+    {
+      "productId": 444,
+      "productName": "chair"
+    }
+  ],
+  "order": [
+    {
+      "orderId": 1,
+      "userId": 1,
+      "productId": 222
+    },
+    {
+      "orderId": 2,
+      "userId": 2,
+      "productId": 222
+    },
+    {
+      "orderId": 3,
+      "userId": 2,
+      "productId": 333
+    },
+    {
+      "orderId": 4,
+      "userId": 2,
+      "productId": 111
+    },
+    {
+      "orderId": 5,
+      "userId": 3,
+      "productId": 444
+    },
+    {
+      "orderId": 6,
+      "userId": 1,
+      "productId": 444
+    },
+    {
+      "orderId": 7,
+      "userId": 1,
+      "productId": 444
+    }
+  ]
+}
