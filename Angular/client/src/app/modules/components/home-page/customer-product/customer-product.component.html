@@ -1,0 +1,71 @@
+<!-- <div class="card">
+    <div class="card-image">
+        <figure class="image is-48x48">
+            <img src="https://image.flaticon.com/icons/svg/1373/1373208.svg"
+                alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left">
+                <figure class="image is-48x48">
+                    <img
+                        src="https://image.flaticon.com/icons/svg/1373/1373208.svg"
+                        alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="media-content">
+                <p class="title is-4">John Smith</p>
+            </div>
+        </div>
+
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+    </div>
+</div> -->
+
+<div class="card">
+    <div class="card-content">
+        <div class="content">
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-medium"
+                    name="searchStr"
+                    [(ngModel)]="searchStr"
+                    (keyup)="getData()" type="text"
+                    placeholder="Customer Search">
+                <span class="icon is-medium is-left">
+                    <i class="fa fa-search"></i>
+                </span>
+                <span class="icon is-medium is-right">
+                    <i class="fa fa-check"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <table class="table is-fullwidth">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td>Name Details</td>
+                        <td><strong>Bob</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Name Product</td>
+                        <td><strong>Hammer</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Order Quatity</td>
+                        <td><strong>23</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
