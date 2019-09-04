@@ -1,4 +1,6 @@
+import { OrderService } from './../../../../shared/services/search-repository.service';
 import { Component, OnInit } from '@angular/core';
+import { IOrders } from 'src/app/core/models/OrderInterface';
 
 @Component({
   selector: 'app-popular-product',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular-product.component.scss']
 })
 export class PopularProductComponent implements OnInit {
-
-  constructor() { }
+  constructor(private orderList: OrderService) {}
 
   ngOnInit() {
+    this.getOrderlist();
   }
 
+  public getOrderlist() {
+    this.orderList.getMostPopularProduct().subscribe((resp: IOrders[]) => {
+      console.log(resp);
+    });
+  }
 }

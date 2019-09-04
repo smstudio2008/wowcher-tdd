@@ -1,22 +1,22 @@
-export interface User {
+interface User {
   userId: number;
   name: string;
   age: number;
   email: string;
 }
 
-export interface Product {
+interface Product {
   productId: number;
   productName: string;
 }
 
-export interface Order {
+interface Order {
   orderId: number;
   userId: number;
   productId: number;
 }
 
-export interface Orders {
+export interface IOrders {
   users: User[];
   products: Product[];
   order: Order[];
